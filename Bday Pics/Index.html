@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raj ❤️ Chaman</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background particles -->
+    <div class="particles"></div>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <button class="music-btn" id="musicBtn">
+        ♫
+    </button>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                A STORY WRITTEN IN MEMORIES
+            </p>
+
+            <h1>
+                RAJ <span>×</span> CHAMAN
+            </h1>
+
+            <p class="hero-text">
+                Two hearts. One story.<br>
+                And countless memories still to come.
+            </p>
+
+            <div class="date">
+                30 · 09 · 2023
+            </div>
+
+            <button class="enter-btn" onclick="scrollToStory()">
+                ENTER OUR STORY ↓
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section class="story section" id="story">
+
+        <div class="section-title">
+
+            <span>
+                THE BEGINNING
+            </span>
+
+            <h2>
+                Our Story
+            </h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="story-content">
+
+            <div class="story-image reveal">
+                <img src="images/hero.jpg" alt="Raj and Chaman">
+            </div>
+
+
+            <div class="story-text reveal">
+
+                <p class="date-small">
+                    30 September 2023
+                </p>
+
+                <h3>
+                    Some stories begin with a meeting...
+                </h3>
+
+                <p>
+                    Ours began on a day that seemed normal,
+                    but slowly became one of the most special
+                    parts of our lives.
+                </p>
+
+                <p>
+                    Since that day, every laugh, every conversation,
+                    every silly moment and every memory has become
+                    a small part of our story.
+                </p>
+
+                <p class="gujarati">
+                    “Tari sathe vitavelo darek pal,
+                    mari life ni ek beautiful memory chhe...
+                    ane haju ghani memories banavani baki chhe. ❤️”
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section class="memories section">
+
+        <div class="section-title">
+
+            <span>
+                OUR JOURNEY
+            </span>
+
+            <h2>
+                Our Memories
+            </h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <div class="photo-card reveal">
+
+                <img src="images/memory1.jpg">
+
+                <div class="photo-caption">
+                    <span>01</span>
+                    A beautiful beginning
+                </div>
+
+            </div>
+
+
+            <div class="photo-card reveal">
+
+                <img src="images/memory2.jpg">
+
+                <div class="photo-caption">
+                    <span>02</span>
+                    Little moments
+                </div>
+
+            </div>
+
+
+            <div class="photo-card reveal">
+
+                <img src="images/memory3.jpg">
+
+                <div class="photo-caption">
+                    <span>03</span>
+                    Crazy memories
+                </div>
+
+            </div>
+
+
+            <div class="photo-card reveal">
+
+                <img src="images/memory4.jpg">
+
+                <div class="photo-caption">
+                    <span>04</span>
+                    Forever moments
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CHAMAN ================= -->
+
+    <section class="person-section">
+
+        <div class="person-image reveal">
+
+            <img src="images/chaman1.jpg">
+
+        </div>
+
+
+        <div class="person-text reveal">
+
+            <span>
+                HER MOMENTS
+            </span>
+
+            <h2>
+                Chaman ❤️
+            </h2>
+
+            <p>
+                The smile, the madness, the little things...
+                somehow they all became my favourite things.
+            </p>
+
+            <p class="gujarati">
+                “Tu chhe etle badhu thodu vadhu beautiful lage chhe.”
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RAJ ================= -->
+
+    <section class="person-section reverse">
+
+        <div class="person-image reveal">
+
+            <img src="images/raj1.jpg">
+
+        </div>
+
+
+        <div class="person-text reveal">
+
+            <span>
+                HIS MOMENTS
+            </span>
+
+            <h2>
+                Raj ❤️
+            </h2>
+
+            <p>
+                Behind every memory, there is a story.
+                And behind every story, there is us.
+            </p>
+
+            <p class="gujarati">
+                “Aapdi story perfect nathi...
+                pan mara mate special jarur chhe.”
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUNNY ================= -->
+
+    <section class="funny section">
+
+        <div class="section-title">
+
+            <span>
+                THE CHAOS
+            </span>
+
+            <h2>
+                Our Crazy Side 😂
+            </h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+        <div class="funny-grid">
+
+            <div class="funny-card reveal">
+
+                <img src="images/funny1.jpg">
+
+                <div>
+
+                    <h3>
+                        Serious? Never.
+                    </h3>
+
+                    <p>
+                        Normal photos were apparently
+                        not enough for us 😂
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="funny-card reveal">
+
+                <img src="images/memory2.jpg">
+
+                <div>
+
+                    <h3>
+                        Just Us.
+                    </h3>
+
+                    <p>
+                        Two people. Unlimited nonsense.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CINEMATIC ================= -->
+
+    <section class="cinematic">
+
+        <div class="cinematic-overlay"></div>
+
+        <div class="cinematic-content reveal">
+
+            <span>
+                STILL MY FAVOURITE STORY
+            </span>
+
+            <h2>
+                Some memories<br>
+                deserve to stay forever.
+            </h2>
+
+            <p>
+                And this is only the beginning...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BIRTHDAY ================= -->
+
+    <section class="birthday">
+
+        <div class="birthday-content reveal">
+
+            <p class="birthday-small">
+                TODAY IS ABOUT YOU
+            </p>
+
+            <h1>
+                Happy Birthday,<br>
+                <span>Chaman ❤️</span>
+            </h1>
+
+            <div class="heart">
+                ♥
+            </div>
+
+            <p>
+                Aa bas birthday wish nathi...
+                <br>
+                aa mari taraf thi tari mate
+                ek nani si memory chhe.
+            </p>
+
+
+            <!-- SURPRISE BUTTON -->
+
+            <button
+                type="button"
+                class="surprise-btn"
+                onclick="openSurprise()">
+
+                One Last Surprise ❤️
+
+            </button>
+
+
+            <p class="final-message">
+                “Tari smile hamesha aavi j rahe,
+                ane aapdi story ma haju ghana beautiful
+                chapters baki chhe.”
+            </p>
+
+
+            <div class="final-names">
+                RAJ × CHAMAN
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FINAL SURPRISE POPUP ================= -->
+
+    <div
+        class="surprise-overlay"
+        id="surpriseOverlay">
+
+        <div class="surprise-box">
+
+
+            <!-- CLOSE BUTTON -->
+
+            <button
+                type="button"
+                class="close-surprise"
+                onclick="closeSurprise()">
+
+                &times;
+
+            </button>
+
+
+            <!-- SPECIAL PHOTO -->
+
+            <div class="surprise-photo">
+
+                <img
+                    src="images/surprise.jpg"
+                    alt="Our Special Memory">
+
+            </div>
+
+
+            <!-- HEART -->
+
+            <div class="surprise-heart">
+                ❤️
+            </div>
+
+
+            <!-- SMALL TITLE -->
+
+            <p class="surprise-label">
+                FOR THE MOST SPECIAL PERSON
+            </p>
+
+
+            <!-- TITLE -->
+
+            <h2>
+                Happy Birthday,<br>
+                Chaman ❤️
+            </h2>
+
+
+            <!-- DIVIDER -->
+
+            <div class="surprise-divider"></div>
+
+
+            <!-- MESSAGE -->
+
+            <p class="surprise-text">
+
+                Tari sathe vitavelo darek pal
+                mara mate ek beautiful memory chhe.
+
+                <br><br>
+
+                Ketli badhi masti,
+                ketla badha laughs,
+                ane ketli badhi memories...
+
+                <br><br>
+
+                Aa badhu haju bas beginning chhe.
+
+                <br>
+
+                Aapde haju ghani beautiful memories
+                banavani baki chhe. ❤️
+
+            </p>
+
+
+            <!-- ENDING -->
+
+            <p class="surprise-ending">
+                Always keep smiling. ❤️
+            </p>
+
+
+            <!-- SIGNATURE -->
+
+            <div class="surprise-signature">
+                RAJ × CHAMAN
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            Made with ❤️ by Raj
+        </p>
+
+        <p>
+            30 · 09 · 2023 — Forever a special date.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+
+    <!-- SURPRISE FUNCTIONS -->
+
+    <script>
+
+        function openSurprise() {
+
+            const popup =
+                document.getElementById("surpriseOverlay");
+
+            popup.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        }
+
+
+        function closeSurprise() {
+
+            const popup =
+                document.getElementById("surpriseOverlay");
+
+            popup.classList.remove("active");
+
+            document.body.style.overflow = "auto";
+
+        }
+
+
+        /* Close popup by clicking outside */
+
+        document
+            .getElementById("surpriseOverlay")
+            .addEventListener("click", function(event) {
+
+                if (event.target === this) {
+
+                    closeSurprise();
+
+                }
+
+            });
+
+
+        /* Close popup with ESC key */
+
+        document.addEventListener("keydown", function(event) {
+
+            if (event.key === "Escape") {
+
+                closeSurprise();
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
