@@ -1,0 +1,1357 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   PARTICLES
+========================= */
+
+.particles {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    animation: floatParticle linear infinite;
+}
+
+@keyframes floatParticle {
+
+    from {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
+
+
+/* =========================
+   MUSIC
+========================= */
+
+.music-btn {
+
+    position: fixed;
+
+    right: 25px;
+    top: 25px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(255,255,255,0.4);
+
+    background: rgba(10,10,10,0.7);
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    z-index: 1000;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+.music-btn:hover {
+
+    transform: scale(1.1);
+
+    background: #8d1728;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.9)
+        ),
+        url("images/hero.jpg") center/cover;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        radial-gradient(
+            circle at center,
+            transparent 20%,
+            rgba(0,0,0,0.85)
+        );
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    padding: 20px;
+}
+
+
+.small-title {
+
+    font-size: 12px;
+
+    letter-spacing: 5px;
+
+    color: #d99ba5;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(45px, 8vw, 100px);
+
+    letter-spacing: 8px;
+
+    font-weight: 500;
+}
+
+.hero h1 span {
+
+    color: #b82b43;
+
+    margin: 0 15px;
+}
+
+
+.hero-text {
+
+    margin-top: 25px;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #ddd;
+}
+
+
+.date {
+
+    margin-top: 25px;
+
+    letter-spacing: 6px;
+
+    color: #d99ba5;
+}
+
+
+.enter-btn {
+
+    margin-top: 40px;
+
+    padding: 15px 30px;
+
+    background: transparent;
+
+    color: white;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    cursor: pointer;
+
+    letter-spacing: 2px;
+
+    transition: 0.4s;
+}
+
+.enter-btn:hover {
+
+    background: #8d1728;
+
+    border-color: #8d1728;
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================
+   GENERAL
+========================= */
+
+.section {
+
+    padding: 120px 8%;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 70px;
+}
+
+
+.section-title span {
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    color: #b82b43;
+}
+
+
+.section-title h2 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(35px, 5vw, 55px);
+
+    font-weight: 400;
+
+    margin-top: 15px;
+}
+
+
+.line {
+
+    width: 60px;
+
+    height: 1px;
+
+    background: #b82b43;
+
+    margin: 25px auto;
+}
+
+
+/* =========================
+   STORY
+========================= */
+
+.story-content {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+
+.story-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+
+    filter: grayscale(15%);
+
+    border-radius: 3px;
+
+    box-shadow: 0 30px 70px rgba(0,0,0,0.6);
+}
+
+
+.story-text {
+
+    color: #bbb;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+}
+
+
+.date-small {
+
+    color: #b82b43;
+
+    letter-spacing: 3px;
+
+    font-size: 12px;
+
+    margin-bottom: 20px;
+}
+
+
+.story-text h3 {
+
+    color: white;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 30px;
+
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+
+.story-text p {
+
+    margin-bottom: 20px;
+}
+
+
+.gujarati {
+
+    color: #e0aab3;
+
+    font-style: italic;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   GALLERY
+   FULL IMAGE - NO CROP
+========================= */
+
+.gallery {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.photo-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    min-height: 500px;
+
+    height: auto;
+
+    background: #111;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.photo-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    transition: transform 0.8s ease;
+
+    filter: brightness(0.8);
+
+    background: #080808;
+}
+
+
+.photo-card:hover img {
+
+    transform: scale(1.03);
+
+    filter: brightness(1);
+}
+
+
+.photo-caption {
+
+    position: relative;
+
+    bottom: auto;
+
+    left: auto;
+
+    right: auto;
+
+    padding: 20px 25px;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.95)
+        );
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 18px;
+}
+
+
+.photo-caption span {
+
+    color: #b82b43;
+
+    font-size: 12px;
+
+    margin-right: 15px;
+}
+
+
+/* =========================
+   PERSON
+========================= */
+
+.person-section {
+
+    max-width: 1200px;
+
+    margin: 100px auto;
+
+    padding: 0 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.person-section.reverse {
+
+    direction: rtl;
+}
+
+
+.person-section.reverse .person-text {
+
+    direction: ltr;
+}
+
+
+.person-image img {
+
+    width: 100%;
+
+    height: 600px;
+
+    object-fit: cover;
+}
+
+
+.person-text span {
+
+    color: #b82b43;
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+}
+
+
+.person-text h2 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 60px;
+
+    font-weight: 400;
+
+    margin: 20px 0;
+}
+
+
+.person-text p {
+
+    color: #aaa;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   FUNNY
+   FULL IMAGE - NO CROP
+========================= */
+
+.funny {
+
+    background: #0c0c0c;
+}
+
+
+.funny-grid {
+
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+
+.funny-card {
+
+    background: #141414;
+
+    padding-bottom: 25px;
+
+    overflow: hidden;
+}
+
+
+.funny-card img {
+
+    width: 100%;
+
+    height: auto;
+
+    max-height: 600px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    background: #080808;
+}
+
+
+.funny-card div {
+
+    padding: 20px;
+}
+
+
+.funny-card h3 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+
+.funny-card p {
+
+    color: #999;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CINEMATIC
+========================= */
+
+.cinematic {
+
+    min-height: 80vh;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.9)
+        ),
+        url("images/memory3.jpg") center/cover fixed;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+
+.cinematic-content {
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.cinematic-content span {
+
+    color: #d99ba5;
+
+    letter-spacing: 5px;
+
+    font-size: 11px;
+}
+
+
+.cinematic-content h2 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(35px,6vw,70px);
+
+    font-weight: 400;
+
+    line-height: 1.3;
+
+    margin: 25px 0;
+}
+
+
+.cinematic-content p {
+
+    color: #aaa;
+}
+
+
+/* =========================
+   BIRTHDAY
+========================= */
+
+.birthday {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #2a1016,
+            #080808 65%
+        );
+}
+
+
+.birthday-small {
+
+    letter-spacing: 5px;
+
+    color: #b82b43;
+
+    font-size: 11px;
+}
+
+
+.birthday h1 {
+
+    font-family: 'Cinzel', serif;
+
+    font-size: clamp(50px,8vw,100px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    margin: 25px 0;
+}
+
+
+.birthday h1 span {
+
+    color: #d88b98;
+}
+
+
+.heart {
+
+    font-size: 55px;
+
+    color: #b82b43;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+.birthday-content > p {
+
+    color: #aaa;
+
+    line-height: 2;
+
+    max-width: 650px;
+
+    margin: 20px auto;
+}
+
+
+.final-message {
+
+    font-style: italic;
+
+    color: #d4a3ab !important;
+
+    margin-top: 40px !important;
+}
+
+
+.final-names {
+
+    margin-top: 50px;
+
+    letter-spacing: 7px;
+
+    color: #777;
+
+    font-family: 'Cinzel', serif;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 1px solid #222;
+
+    color: #666;
+
+    font-size: 12px;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   ANIMATION
+========================= */
+
+.reveal {
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition: 1s ease;
+}
+
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width: 768px) {
+
+    .section {
+
+        padding: 80px 6%;
+    }
+
+    .hero h1 {
+
+        letter-spacing: 4px;
+    }
+
+    .story-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .story-image img {
+
+        height: 450px;
+    }
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FULL MEMORY IMAGE ON MOBILE */
+
+    .photo-card {
+
+        height: auto;
+
+        min-height: 0;
+
+        width: 100%;
+    }
+
+    .photo-card img {
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: none;
+
+        object-fit: contain;
+
+        object-position: center;
+
+        display: block;
+    }
+
+
+    .person-section,
+    .person-section.reverse {
+
+        grid-template-columns: 1fr;
+
+        direction: ltr;
+
+        gap: 40px;
+
+        margin: 80px auto;
+    }
+
+    .person-image img {
+
+        height: 450px;
+    }
+
+    .person-text h2 {
+
+        font-size: 45px;
+    }
+
+
+    .funny-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    /* FULL FUNNY IMAGE ON MOBILE */
+
+    .funny-card img {
+
+        width: 100%;
+
+        height: auto;
+
+        max-height: none;
+
+        object-fit: contain;
+
+        object-position: center;
+
+        display: block;
+    }
+
+
+    .cinematic {
+
+        background-attachment: scroll;
+    }
+
+    .music-btn {
+
+        width: 45px;
+
+        height: 45px;
+
+        right: 15px;
+
+        top: 15px;
+    }
+
+}
+
+
+/* =========================
+   SURPRISE BUTTON
+========================= */
+
+.surprise-btn {
+
+    margin-top: 35px;
+
+    padding: 16px 35px;
+
+    background: transparent;
+
+    border: 1px solid #b82b43;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+
+.surprise-btn:hover {
+
+    background: #b82b43;
+
+    box-shadow:
+        0 0 25px rgba(184,43,67,0.5);
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   SURPRISE OVERLAY
+========================= */
+
+.surprise-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: 99999;
+
+    background: rgba(0,0,0,0.96);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+        opacity 0.5s ease,
+        visibility 0.5s ease;
+}
+
+
+.surprise-overlay.active {
+
+    opacity: 1;
+
+    visibility: visible;
+}
+
+
+/* =========================
+   SURPRISE BOX
+========================= */
+
+.surprise-box {
+
+    position: relative;
+
+    width: min(700px, 100%);
+
+    max-height: 90vh;
+
+    overflow-y: auto;
+
+    padding: 55px 45px;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #281116,
+            #090909 75%
+        );
+
+    border: 1px solid
+        rgba(184,43,67,0.6);
+
+    box-shadow:
+        0 0 80px
+        rgba(184,43,67,0.3);
+
+    transform: scale(0.8);
+
+    transition:
+        transform 0.5s ease;
+}
+
+
+.surprise-overlay.active
+.surprise-box {
+
+    transform: scale(1);
+}
+
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-surprise {
+
+    position: absolute;
+
+    top: 12px;
+
+    right: 18px;
+
+    width: 45px;
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: transparent;
+
+    border: none;
+
+    color: #ffffff;
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 100000;
+
+    transition: 0.3s;
+}
+
+
+.close-surprise:hover {
+
+    color: #d99ba5;
+
+    transform: rotate(90deg);
+}
+
+
+/* =========================
+   SURPRISE PHOTO
+========================= */
+
+.surprise-photo {
+
+    width: 220px;
+
+    height: 280px;
+
+    margin: 0 auto 25px;
+
+    overflow: hidden;
+
+    border: 1px solid
+        rgba(184,43,67,0.7);
+
+    box-shadow:
+        0 0 35px
+        rgba(184,43,67,0.35);
+
+    background: #000;
+}
+
+
+.surprise-photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================
+   SURPRISE HEART
+========================= */
+
+.surprise-heart {
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+    animation:
+        surpriseHeart 1.5s infinite;
+}
+
+
+@keyframes surpriseHeart {
+
+    0%,100% {
+
+        transform: scale(1);
+    }
+
+    50% {
+
+        transform: scale(1.15);
+    }
+}
+
+
+/* =========================
+   SURPRISE LABEL
+========================= */
+
+.surprise-label {
+
+    color: #d99ba5;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   SURPRISE HEADING
+========================= */
+
+.surprise-box h2 {
+
+    color: #ffffff;
+
+    font-family: 'Cinzel', serif;
+
+    font-size:
+        clamp(40px,7vw,70px);
+
+    font-weight: 400;
+
+    line-height: 1.2;
+
+    margin: 0;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.surprise-divider {
+
+    width: 60px;
+
+    height: 1px;
+
+    background: #b82b43;
+
+    margin: 30px auto;
+}
+
+
+/* =========================
+   SURPRISE MESSAGE
+========================= */
+
+.surprise-text {
+
+    color: #c2c2c2;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+    max-width: 580px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   SURPRISE ENDING
+========================= */
+
+.surprise-ending {
+
+    color: #e0aab3;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 20px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================
+   SURPRISE SIGNATURE
+========================= */
+
+.surprise-signature {
+
+    color: #777;
+
+    font-family: 'Cinzel', serif;
+
+    font-size: 12px;
+
+    letter-spacing: 6px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   SURPRISE MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .surprise-box {
+
+        padding: 55px 25px 40px;
+    }
+
+    .close-surprise {
+
+        top: 8px;
+
+        right: 10px;
+    }
+
+    .surprise-photo {
+
+        width: 180px;
+
+        height: 230px;
+    }
+
+    .surprise-text {
+
+        font-size: 14px;
+    }
+
+}
